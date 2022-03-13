@@ -1,0 +1,105 @@
+@import url('http://fonts.cdnfonts.com/css/bookerly');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color:#EBEDEF;
+    font-family: 'Bookerly', sans-serif;
+}
+
+ul {
+    list-style-type: none ;
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    background-color: #FBE9E7;
+    max-width: 100%;
+    width: content-box;
+    margin: 5px 0;
+    height: 60px;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+li input[type="checkbox"] {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    border: 1px solid green;
+}
+
+li button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+#input-task {
+    height: 45px;
+    border-radius: 5px;
+    padding: 0 10px;
+    text-align: center;
+    font-size: medium;
+    font-family: 'Bookerly', sans-serif;
+}
+#input-task:focus {
+    outline: none;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #16A085;
+    width: 40%;
+    margin-top: 5%;
+    padding: 60px 40px;
+    border-radius: 25px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.delete-btn{
+    background-color: #F5B7B1;
+}
+
+input[type=checkbox] + span {
+    text-decoration: none;
+}
+input[type=checkbox]:checked + span {
+    text-decoration: line-through;
+}
+
+#add-task-button {
+    height: 50px;
+    border-radius: 5px;
+    background-color: #58D68D;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: medium;
+    font-family: 'Bookerly', sans-serif;
+}
+
+#add-task-button:hover {
+    transform: scale(1.01);
+    border: 1px solid black;
+    outline: none;
+}
+
+#task-list {
+    padding: 0;
+}
+
